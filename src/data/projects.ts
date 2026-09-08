@@ -1,6 +1,7 @@
 export const projects = [
   {
-    label: "ORDERCLIC · SISTEMA POS + FACTURACIÓN ELECTRÓNICA",
+    label: "SaaS · POS y facturación",
+    featured: true,
     title: "Plataforma POS & SaaS para Gestión Comercial",
     problem:
       "Negocios gestionando ventas con hojas de cálculo sin control real de inventario, caja ni reportes.",
@@ -16,7 +17,8 @@ export const projects = [
     copilots: ["OpenCode", "Claude Code"],
   },
   {
-    label: "IA · Chatbot",
+    label: "IA · Chatbot WhatsApp",
+    featured: true,
     title: "Chatbot Inteligente con WhatsApp API + IA",
     problem:
       "Empresas perdiendo clientes potenciales por no poder atender consultas fuera de horario laboral.",
@@ -32,46 +34,15 @@ export const projects = [
     copilots: ["OpenCode", "Codex"],
   },
   {
-    label: "Fullstack · Vehículos",
-    title: "Sistema de Gestión y Venta de Vehículos",
-    problem:
-      "Concesionarios administrando su inventario vehicular de manera manual, sin visibilidad en tiempo real ni seguimiento de clientes.",
-    solution:
-      "Plataforma web fullstack con módulos de inventario, seguimiento de prospectos, fichas técnicas y panel administrativo con métricas de ventas.",
-    result:
-      "Digitalización completa del proceso de venta, desde la captura del lead hasta el cierre del negocio.",
-    stack: ["React", "Node.js", "MySQL", "Next.js"],
-    image: "img3.png",
-    github: "https://github.com/millerbermeo/SistemaFrontend",
-    deploy: "https://sistema-vehiculos.vercel.app/",
-    accent: "violet",
-    copilots: ["OpenCode", "Claude Code", "OpenClaw"],
-  },
-  {
-    label: "IA · Automatización",
-    title: "Sistema de Domicilios con Automatización IA",
-    problem:
-      "Proceso de asignación de pedidos manual, lento y con alta tasa de errores en la distribución.",
-    solution:
-      "Plataforma de delivery con asignación inteligente de repartidores, seguimiento en tiempo real, notificaciones automáticas y rutas optimizadas con IA.",
-    result:
-      "Reducción del tiempo de asignación de pedidos de minutos a segundos, con trazabilidad completa.",
-    stack: ["Python", "FastAPI", "React", "PostgreSQL", "Claude API"],
-    image: "movimientos.png",
-    github: "https://github.com/millerbermeo/delivery-ia",
-    deploy: "https://delivery-platform.vercel.app/",
-    accent: "orange",
-    copilots: ["Claude Code", "Codex", "OpenCode"],
-  },
-  {
-    label: "DELIVERY SaaS · Multi-Tenant",
+    label: "SaaS · Delivery multi-tenant",
+    featured: true,
     title: "Plataforma SaaS de Domicilios con WhatsApp API + IA",
     problem:
       "Empresas de delivery gestionando pedidos manualmente, sin comunicación en tiempo real con domiciliarios ni seguimiento de ubicación.",
     solution:
       "Plataforma multi-tenant SaaS con gestión de pedidos, atención automática de clientes via WhatsApp API, asignación inteligente de domiciliarios, conexión en tiempo real usando WebSockets, tracking de ubicación en vivo, panel de ofertas y administración de rutas.",
     result:
-      "Automatización completa del ciclo de delivery con comunicación instantánea cliente-domiciliario y reducción del 80% en tiempos de asignación.",
+      "Ciclo de delivery automático de punta a punta, con comunicación instantánea cliente-domiciliario y despacho sin llamadas manuales.",
     stack: ["React", "TypeScript", "React Native", "Node.js", "NestJS", "PostgreSQL", "Socket.io", "WhatsApp API", "Google Maps API"],
     image: "delivery.png",
     github: "https://github.com/millerbermeo/delivery-saas",
@@ -80,8 +51,9 @@ export const projects = [
     copilots: ["OpenCode", "Claude Code", "OpenClaw", "Codex"],
   },
   {
-    label: "ENVIOSW · Marketplace de Domicilios",
-    title: "Plataforma Web de Domicilios Multi-Comercio para Pitalito, Huila",
+    label: "Marketplace · Domicilios locales",
+    featured: true,
+    title: "Marketplace de Domicilios Multi-Comercio para Pitalito, Huila",
     problem:
       "Comercios locales (restaurantes, tiendas, farmacias, licoreras) sin un canal digital unificado para vender y coordinar domicilios, obligando a los clientes a contactar cada negocio por separado.",
     solution:
@@ -97,32 +69,9 @@ export const projects = [
     copilots: ["Claude Code", "OpenCode"],
   },
   {
-    label: "CONTADOR PERSONAL · Servicios Contables",
-    title: "Landing de Servicios Contables y Asesoría Tributaria en Colombia",
-    problem:
-      "Personas y empresas en Colombia con dificultades para gestionar correctamente sus obligaciones contables, tributarias y laborales, generando riesgos de sanciones, desorden financiero y falta de claridad en la toma de decisiones.",
-    solution:
-      "Landing profesional que ofrece servicios contables integrales: asesoría tributaria, contabilidad general, revisoría fiscal, gestión laboral, planeación financiera y constitución de empresas. Incluye contacto directo por WhatsApp, presentación de servicios, tarifas transparentes, sección de confianza con perfil del contador y FAQ para resolver dudas frecuentes.",
-    result:
-      "Mayor confianza y captación de clientes locales mediante una presentación clara de servicios contables, precios visibles, contacto rápido por WhatsApp y posicionamiento como contador profesional independiente.",
-    stack: ["Astro", "Tailwind CSS", "JavaScript", "TypeScript", "WhatsApp API", "SEO"],
-    image: "landing-contador/img-1.png",
-    images: [
-      "landing-contador/img-1.png",
-      "landing-contador/img-2.png",
-      "landing-contador/img-3.png",
-      "landing-contador/img-4.png",
-      "landing-contador/img-5.png",
-      "landing-contador/img-6.png",
-    ],
-    github: "https://github.com/millerbermeo/contador_landing",
-    deploy: "https://brianpedraza.com/",
-    accent: "green",
-    copilots: ["OpenCode"],
-  },
-  {
-    label: "MOTOSPARATODOS · Ventas y Créditos",
-    title: "Sistema de Gestión de Ventas, Créditos y Trazabilidad para Concesionario de Motocicletas",
+    label: "Fullstack · Ventas y créditos moto",
+    featured: true,
+    title: "Sistema de Ventas, Créditos y Trazabilidad para Concesionario de Motos",
     problem:
       "Agencia de venta de motocicletas gestionando cotizaciones y créditos (contado, crédito interno o de terceros) de forma manual, sin trazabilidad del proceso desde la cotización hasta la entrega del vehículo, ni control centralizado de aprobación de créditos.",
     solution:
@@ -146,7 +95,63 @@ export const projects = [
     copilots: ["Claude Code", "OpenCode"],
   },
   {
-    label: "ECOMMERCE · Tienda de Ropa y Calzado",
+    label: "Fullstack · Venta de vehículos",
+    title: "Sistema de Gestión y Venta de Vehículos",
+    problem:
+      "Concesionarios administrando su inventario vehicular de manera manual, sin visibilidad en tiempo real ni seguimiento de clientes.",
+    solution:
+      "Plataforma web fullstack con módulos de inventario, seguimiento de prospectos, fichas técnicas y panel administrativo con métricas de ventas.",
+    result:
+      "Digitalización completa del proceso de venta, desde la captura del lead hasta el cierre del negocio.",
+    stack: ["React", "Node.js", "MySQL", "Next.js"],
+    image: "img3.png",
+    github: "https://github.com/millerbermeo/SistemaFrontend",
+    deploy: "https://sistema-vehiculos.vercel.app/",
+    accent: "violet",
+    copilots: ["OpenCode", "Claude Code", "OpenClaw"],
+  },
+  {
+    label: "IA · Domicilios automatizados",
+    title: "Sistema de Domicilios con Automatización IA",
+    problem:
+      "Proceso de asignación de pedidos manual, lento y con alta tasa de errores en la distribución.",
+    solution:
+      "Plataforma de delivery con asignación inteligente de repartidores, seguimiento en tiempo real, notificaciones automáticas y rutas optimizadas con IA.",
+    result:
+      "Reducción del tiempo de asignación de pedidos de minutos a segundos, con trazabilidad completa.",
+    stack: ["Python", "FastAPI", "React", "PostgreSQL", "Claude API"],
+    image: "movimientos.png",
+    github: "https://github.com/millerbermeo/delivery-ia",
+    deploy: "https://delivery-platform.vercel.app/",
+    accent: "orange",
+    copilots: ["Claude Code", "Codex", "OpenCode"],
+  },
+  {
+    label: "Landing · Servicios contables",
+    title: "Landing de Servicios Contables y Asesoría Tributaria en Colombia",
+    problem:
+      "Personas y empresas en Colombia con dificultades para gestionar correctamente sus obligaciones contables, tributarias y laborales, generando riesgos de sanciones, desorden financiero y falta de claridad en la toma de decisiones.",
+    solution:
+      "Landing profesional que ofrece servicios contables integrales: asesoría tributaria, contabilidad general, revisoría fiscal, gestión laboral, planeación financiera y constitución de empresas. Incluye contacto directo por WhatsApp, presentación de servicios, tarifas transparentes, sección de confianza con perfil del contador y FAQ para resolver dudas frecuentes.",
+    result:
+      "Mayor confianza y captación de clientes locales mediante una presentación clara de servicios contables, precios visibles, contacto rápido por WhatsApp y posicionamiento como contador profesional independiente.",
+    stack: ["Astro", "Tailwind CSS", "JavaScript", "TypeScript", "WhatsApp API", "SEO"],
+    image: "landing-contador/img-1.png",
+    images: [
+      "landing-contador/img-1.png",
+      "landing-contador/img-2.png",
+      "landing-contador/img-3.png",
+      "landing-contador/img-4.png",
+      "landing-contador/img-5.png",
+      "landing-contador/img-6.png",
+    ],
+    github: "https://github.com/millerbermeo/contador_landing",
+    deploy: "https://brianpedraza.com/",
+    accent: "green",
+    copilots: ["OpenCode"],
+  },
+  {
+    label: "Ecommerce · Ropa y calzado",
     title: "Plataforma Ecommerce Profesional para Venta de Ropa y Zapatos",
     problem:
       "Negocios de ropa y calzado sin presencia digital sólida, con dificultad para gestionar productos, variantes, inventario y pedidos de forma ordenada y eficiente.",

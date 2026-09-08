@@ -4,8 +4,8 @@ import ThemeToggle from "./ThemeToggle.astro";
 const navItems = [
   { label: "Inicio", href: "#home" },
   { label: "Sobre mí", href: "#about" },
-  { label: "Experiencia", href: "#experience" },
   { label: "Proyectos", href: "#projects" },
+  { label: "Experiencia", href: "#experience" },
   { label: "Servicios", href: "#services" },
 ];
 ---
@@ -250,7 +250,7 @@ const navItems = [
   });
 
   // ═══════════════════ Scroll-spy (nav activo) ═══════════════════
-  const sections = ["home", "about", "experience", "projects", "services", "contact"];
+  const sections = ["home", "about", "projects", "experience", "services", "contact"];
   const navLinks = document.querySelectorAll("[data-nav-link]");
 
   function setActive(id: string) {

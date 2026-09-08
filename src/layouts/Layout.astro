@@ -12,7 +12,7 @@ interface Props {
 
 const {
   title = "Miller Bermeo — Desarrollador Fullstack & IA",
-  description = "Desarrollador Fullstack con 3 años de experiencia construyendo sistemas POS, SaaS, chatbots con IA y automatizaciones orientadas a negocio. Backend · Node.js · Python · React.",
+  description = "Desarrollador Fullstack con 4 años de experiencia (3 en producción) construyendo sistemas POS, plataformas SaaS, chatbots con IA y automatizaciones orientadas a negocio. Backend · Node.js · Python · React.",
 } = Astro.props;
 ---
 
@@ -43,7 +43,16 @@ const {
 
     <!-- Canonical & theme -->
     <link rel="canonical" href="https://millerbermeo.dev/" />
-    <meta name="theme-color" content="#080808" />
+    <meta
+      name="theme-color"
+      content="#f7f7fb"
+      media="(prefers-color-scheme: light)"
+    />
+    <meta
+      name="theme-color"
+      content="#0a0a0f"
+      media="(prefers-color-scheme: dark)"
+    />
 
     <!-- Structured data -->
     <script is:inline type="application/ld+json">

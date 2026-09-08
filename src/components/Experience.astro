@@ -1,52 +1,10 @@
 ---
-const responsibilities = [
-  {
-    icon: "storefront-outline",
-    title: "Sistemas POS & SaaS",
-    desc: "Desarrollo de plataformas de punto de venta con módulos de inventario, caja, ventas y reportes en tiempo real.",
-  },
-  {
-    icon: "car-outline",
-    title: "Sistema de Gestión de Vehículos",
-    desc: "Plataforma fullstack para venta y gestión de flota vehicular: inventario, seguimiento y panel administrativo.",
-  },
-  {
-    icon: "chatbubbles-outline",
-    title: "Chatbots con WhatsApp API",
-    desc: "Bots de atención automatizada integrados con WhatsApp Business API, con flujos conversacionales y lógica de negocio.",
-  },
-  {
-    icon: "sparkles-outline",
-    title: "Integración de IA (OpenAI & Claude)",
-    desc: "Implementación de modelos de lenguaje para automatización de respuestas, clasificación y asistentes inteligentes.",
-  },
-  {
-    icon: "bicycle-outline",
-    title: "Sistema de Domicilios Automatizado",
-    desc: "Plataforma de delivery con asignación inteligente de pedidos, seguimiento en tiempo real y automatización con IA.",
-  },
-  {
-    icon: "globe-outline",
-    title: "Landing Pages & Sitios Web",
-    desc: "Desarrollo de páginas de aterrizaje optimizadas para conversión, carga rápida y posicionamiento SEO.",
-  },
-];
-
-const stack = [
-  "Node.js",
-  "NestJS",
-  "Python",
-  "FastAPI",
-  "React",
-  "Next.js",
-  "PostgreSQL",
-  "MySQL",
-  "Docker",
-  "AWS",
-  "WhatsApp API",
-  "OpenAI API",
-  "Claude API",
-  "Linux",
+// Logros a nivel de rol. El detalle de cada proyecto vive en la sección Proyectos.
+const achievements = [
+  "Desarrollo de plataformas SaaS y POS multi-tenant en producción, con hasta 60% menos tiempo de gestión operativa para los negocios que las adoptaron.",
+  "Integración de modelos de IA (OpenAI, Claude) y WhatsApp Business API para automatizar atención al cliente, con más del 70% de resolución autónoma.",
+  "Sistemas de domicilios con asignación inteligente de pedidos: tiempos de asignación de minutos a segundos y trazabilidad completa.",
+  "Trabajo end-to-end: arquitectura, backend, frontend y despliegue en Linux con Docker y AWS.",
 ];
 ---
 
@@ -55,11 +13,16 @@ const stack = [
     <p
       class="text-xs font-semibold uppercase tracking-widest text-accent mb-3"
     >
-      Trayectoria
+      Experiencia
     </p>
-    <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-fg mb-8 sm:mb-12">
-      Experiencia laboral
+    <h2
+      class="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-balance text-fg mb-3 sm:mb-4"
+    >
+      Dónde he trabajado
     </h2>
+    <p class="text-muted mb-8 sm:mb-12 text-sm sm:text-[15px] max-w-2xl text-pretty">
+      3 años construyendo software de negocio, de la arquitectura al despliegue.
+    </p>
 
     <div class="relative">
       <!-- Timeline bar -->
@@ -97,49 +60,24 @@ const stack = [
             >
               <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 flex-shrink-0"
               ></span>
-              2023 — Actualidad · 3 años
+              2023 — Actualidad
             </span>
           </div>
 
-          <!-- Responsibilities grid -->
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <!-- Logros -->
+          <ul class="space-y-3">
             {
-              responsibilities.map((item) => (
-                <div class="flex gap-3 p-3 sm:p-4 rounded-xl bg-fg/[.02] border border-line/[.08] hover:border-line/20 transition-colors duration-200">
+              achievements.map((item) => (
+                <li class="flex gap-3 text-sm text-muted leading-relaxed">
                   <ion-icon
-                    name={item.icon}
-                    class="text-accent text-xl flex-shrink-0 mt-0.5"
+                    name="checkmark-circle-outline"
+                    class="text-accent text-lg flex-shrink-0 mt-0.5"
                   />
-                  <div class="min-w-0">
-                    <p class="text-sm font-semibold text-fg/80">
-                      {item.title}
-                    </p>
-                    <p class="text-xs text-muted mt-1 leading-relaxed">
-                      {item.desc}
-                    </p>
-                  </div>
-                </div>
+                  <span>{item}</span>
+                </li>
               ))
             }
-          </div>
-
-          <!-- Stack -->
-          <div class="mt-6 pt-5 border-t border-line/10">
-            <p
-              class="text-xs font-semibold uppercase tracking-wider text-faint mb-3"
-            >
-              Stack utilizado
-            </p>
-            <div class="flex flex-wrap gap-2">
-              {
-                stack.map((tech) => (
-                  <span class="px-2.5 py-1 text-xs text-muted bg-fg/[.04] border border-line/10 rounded-md hover:border-accent/40 hover:text-fg/80 transition-colors duration-200">
-                    {tech}
-                  </span>
-                ))
-              }
-            </div>
-          </div>
+          </ul>
         </div>
       </div>
     </div>
