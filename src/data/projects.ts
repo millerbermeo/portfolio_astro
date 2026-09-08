@@ -1,5 +1,26 @@
 export const projects = [
   {
+    label: "Mobile · App de domicilios",
+    featured: true,
+    title: "App Móvil de Domicilios — Android en producción",
+    problem:
+      "Clientes y domiciliarios sin una app nativa para pedir, recibir y seguir domicilios en tiempo real desde el teléfono.",
+    solution:
+      "App Android con React Native + Expo: catálogo de comercios, carrito, checkout, seguimiento del pedido en vivo y notificaciones push. Build y publicación gestionadas con EAS.",
+    result:
+      "Publicada en Google Play en producción y en uso real por clientes y repartidores.",
+    stack: ["React Native", "Expo", "EAS", "TypeScript", "Google Play"],
+    // TODO(miller): agregar capturas reales en public/mobile-domicilios/
+    image: "mobile-domicilios/img-1.png",
+    // images: ["mobile-domicilios/img-1.png", "mobile-domicilios/img-2.png"],
+    appId: "com.devmiller.domicilios",
+    deploy:
+      "https://play.google.com/store/apps/details?id=com.devmiller.domicilios",
+    // github: "",
+    accent: "green",
+    copilots: ["Claude Code", "OpenCode"],
+  },
+  {
     label: "SaaS · POS y facturación",
     featured: true,
     title: "Plataforma POS & SaaS para Gestión Comercial",

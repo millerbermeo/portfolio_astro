@@ -28,6 +28,13 @@ const services = [
     tags: ["React", "Next.js", "NestJS", "PostgreSQL", "AWS"],
     accent: "orange",
   },
+  {
+    icon: "phone-portrait-outline",
+    title: "Apps Móviles con React Native",
+    desc: "Desarrollo apps Android (y iOS) con React Native + Expo: del prototipo a producción en Google Play, con builds y entregas gestionadas con EAS.",
+    tags: ["React Native", "Expo", "EAS", "Google Play", "TypeScript"],
+    accent: "cyan",
+  },
 ];
 
 const accentBorder: Record<string, string> = {
@@ -35,6 +42,7 @@ const accentBorder: Record<string, string> = {
   violet: "hover:border-violet-500/40",
   emerald: "hover:border-emerald-500/40",
   orange: "hover:border-orange-500/40",
+  cyan: "hover:border-cyan-500/40",
 };
 
 const accentIcon: Record<string, string> = {
@@ -42,6 +50,7 @@ const accentIcon: Record<string, string> = {
   violet: "text-violet-400 bg-violet-500/10",
   emerald: "text-emerald-400 bg-emerald-500/10",
   orange: "text-orange-400 bg-orange-500/10",
+  cyan: "text-cyan-400 bg-cyan-500/10",
 };
 ---
 
@@ -58,12 +67,14 @@ const accentIcon: Record<string, string> = {
       ¿En qué puedo ayudarte?
     </h2>
     <p class="text-muted mb-8 sm:mb-12 text-sm sm:text-[15px] max-w-2xl text-pretty">
-      Cuatro frentes en los que puedo entrar a tu proyecto, solo o integrado a tu
+      Cinco frentes en los que puedo entrar a tu proyecto, solo o integrado a tu
       equipo.
     </p>
 
-    <!-- 1 col mobile → 2 col tablet → 2 col desktop (2x2) -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5">
+    <!-- 1 col móvil → 2 col desde tablet. Si queda una card impar, ocupa el ancho. -->
+    <div
+      class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5 sm:[&>*:last-child:nth-child(odd)]:col-span-2"
+    >
       {
         services.map((service) => (
           <div

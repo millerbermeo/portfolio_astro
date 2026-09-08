@@ -12,6 +12,13 @@ interface Props {
 
 const { project, animate = true } = Astro.props;
 
+// Enlace de deploy: si apunta a Google Play se muestra como "Play Store".
+const isPlayStore =
+  typeof project.deploy === "string" &&
+  project.deploy.includes("play.google.com");
+const deployLabel = isPlayStore ? "Play Store" : "Deploy";
+const deployIcon = isPlayStore ? "logo-google-playstore" : "globe-outline";
+
 const copilotIcons: Record<string, any> = {
   Codex: CodexIcon,
   "Claude Code": ClaudeCodeIcon,
@@ -182,8 +189,8 @@ const placeholderMap: Record<string, string> = {
                   rel="noopener noreferrer"
                   class="flex items-center gap-1.5 text-xs font-medium text-muted hover:text-fg transition-colors duration-200 flex-shrink-0"
                 >
-                  <ion-icon name="globe-outline" class="text-sm" />
-                  Deploy
+                  <ion-icon name={deployIcon} class="text-sm" />
+                  {deployLabel}
                 </a>
               )
             }
