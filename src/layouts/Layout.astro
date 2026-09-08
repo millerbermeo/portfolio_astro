@@ -1,5 +1,6 @@
 ---
 import Header from "../components/Header.astro";
+import CursorGlow from "../components/CursorGlow.astro";
 import "../styles/global.css";
 import "@fontsource-variable/onest";
 import "@fontsource-variable/space-grotesk";
@@ -98,6 +99,9 @@ const {
       <!-- Viñeta para enfocar el contenido -->
       <div class="bg-vignette absolute inset-0"></div>
     </div>
+
+    <!-- ── Resplandor que sigue el cursor (decorativo) ── -->
+    <CursorGlow />
 
     <Header />
     <slot />
